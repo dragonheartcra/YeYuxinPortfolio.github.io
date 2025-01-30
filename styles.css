@@ -33,8 +33,8 @@ body {
   backdrop-filter: blur(10px);
 }
 
-.nav-st {
-  st-style: none;
+.nav-list {
+  list-style: none;
   display: flex;
   justify-content: center;
   gap: 3rem;
@@ -42,7 +42,7 @@ body {
   margin: 0 auto;
 }
 
-.nav-nk {
+.nav-link {
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -53,12 +53,12 @@ body {
   position: relative;
 }
 
-.nav-nk:hover {
+.nav-link:hover {
   background-color: rgba(255, 255, 255, 0.15);
   transform: translateY(-2px);
 }
 
-.nav-nk::after {
+.nav-link::after {
   content: '';
   position: absolute;
   width: 0;
@@ -69,7 +69,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.nav-nk:hover::after {
+.nav-link:hover::after {
   width: 80%;
   left: 10%;
 }
@@ -98,7 +98,7 @@ body {
 }
 
 .login-title {
-  text-agn: center;
+  text-align: center;
   color: var(--primary);
   margin-bottom: 2.5rem;
   font-size: 2rem;
@@ -119,14 +119,14 @@ body {
 .form-input {
   width: 100%;
   padding: 1rem;
-  border: 2px sod #e2e8f0;
+  border: 2px solid #e2e8f0;
   border-radius: 0.5rem;
   font-size: 1rem;
   transition: all 0.3s ease;
 }
 
 .form-input:focus {
-  outne: none;
+  outline: none;
   border-color: var(--secondary);
   box-shadow: 0 0 0 4px rgba(66, 153, 225, 0.15);
 }
@@ -156,7 +156,7 @@ body {
   margin-bottom: 3rem;
   font-size: 3rem;
   font-weight: 800;
-  text-agn: center;
+  text-align: center;
   position: relative;
   padding-bottom: 1rem;
 }
@@ -192,7 +192,7 @@ body {
   object-fit: cover;
   margin: 0 auto 3rem;
   display: block;
-  border: 4px sod transparent;
+  border: 4px solid transparent;
   background: var(--gradient);
   padding: 4px;
   transition: transform 0.3s ease;
@@ -235,17 +235,17 @@ body {
   border-radius: 2px;
 }
 
-.highght {
-  background: near-gradient(120deg, var(--accent) 0%, rgba(144, 205, 244, 0.3) 100%);
+.highlight {
+  background: linear-gradient(120deg, var(--accent) 0%, rgba(144, 205, 244, 0.3) 100%);
   color: var(--primary);
   padding: 0.35rem 0.75rem;
   border-radius: 0.5rem;
   font-weight: 600;
-  display: inne-block;
+  display: inline-block;
   transition: transform 0.3s ease;
 }
 
-.highght:hover {
+.highlight:hover {
   transform: translateY(-2px);
 }
 
@@ -267,10 +267,10 @@ body {
 }
 
 blockquote {
-  border-left: 4px sod var(--accent);
+  border-left: 4px solid var(--accent);
   padding: 1.5rem;
   margin: 1.5rem 0;
-  font-style: itac;
+  font-style: italic;
   background: rgba(144, 205, 244, 0.1);
   border-radius: 0 0.5rem 0.5rem 0;
   transition: all 0.3s ease;
@@ -284,7 +284,7 @@ blockquote:hover {
 .contact-info {
   margin-top: 3rem;
   padding: 2rem;
-  border-top: 2px sod var(--accent);
+  border-top: 2px solid var(--accent);
   background: rgba(144, 205, 244, 0.1);
   border-radius: 0.75rem;
 }
@@ -306,7 +306,7 @@ blockquote:hover {
 .email-signature {
   margin-top: 3rem;
   padding: 2rem;
-  border-top: 2px sod var(--accent);
+  border-top: 2px solid var(--accent);
   background: rgba(144, 205, 244, 0.1);
   border-radius: 0.75rem;
 }
@@ -327,12 +327,12 @@ blockquote:hover {
 
 .venue {
   color: var(--text);
-  font-style: itac;
+  font-style: italic;
   margin-bottom: 2.5rem;
   padding: 1rem;
   background: rgba(144, 205, 244, 0.1);
   border-radius: 0.5rem;
-  text-agn: center;
+  text-align: center;
 }
 
 ul {
@@ -340,8 +340,8 @@ ul {
   margin-bottom: 1.5rem;
 }
 
- {
-   list-style: none;
+li {
+  list-style: none;
   margin-bottom: 0.75rem;
   position: relative;
   padding-left: 0.5rem;
